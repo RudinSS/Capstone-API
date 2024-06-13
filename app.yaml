@@ -1,0 +1,14 @@
+runtime: nodejs18
+
+instance_class: F1
+automatic_scaling:
+  target_cpu_utilization: 0.6
+  min_instances: 1
+  max_instances: 2
+
+env_variables:
+  DB_HOST: "34.101.78.22"
+  DB_USER: "root"
+  DB_PASSWORD: ""
+  DB_NAME: "login"
+  JWT_SECRET: "123SatuDuaTiga"
